@@ -9,7 +9,18 @@ class Auto{
     ejecutarComando(comando){
         for(var i=0;i<comando.length;i++){
             if(comando.charAt(i)=="A"){
-                this.y=this.y+1;
+                if(this.direccionActual%4==0){
+                    this.y++;
+                }
+                if(this.direccionActual%4==2){
+                    this.y--;
+                }
+                if(this.direccionActual%4==1){
+                    this.x++;
+                }
+                if(this.direccionActual%4==3){
+                    this.x--;
+                }
             }
             if(comando.charAt(i)=="D"){
                 this.direccionActual++;

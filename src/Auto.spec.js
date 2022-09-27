@@ -17,5 +17,8 @@ describe("Ejecutar comandos", () => {
     it("Avanzar mas de una vez", () => {
       expect(cD.ejecutarComando("AAA")).toEqual("0,4N");
     });
+    it("Realizar multiples movimientos y giros", () => {
+      expect(cD.ejecutarComando("DDAAAIADADA")).toEqual("0,0O");
+    });
   });
   
