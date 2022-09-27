@@ -1,14 +1,12 @@
 <html>
   <body>
-    <h1>Sumador</h1>
-    <form id="sumar-form">
-      <label for="primer-numero">Primer número:</label>
-      <input type="number" id="primer-numero" />
-      <label for="segundo-numero">Segundo número:</label>
-      <input type="number" id="segundo-numero" />
-      <input type="submit" value="Sumar" />
+    <h1>Simulador de auto</h1>
+    <form id="simulador-form">
+      <label for="primer-numero">Ingrese comandos:</label>
+      <input type="text" id="idcomandos" />
+      <input type="submit" value="go" />
     </form>
-    <div id="resultado-div"></div>
+    <div id="resultado-div">Posicion actual: 0,0N</div>
 
     <script type="module" src="./src/presenter.js"></script>
   </body>
