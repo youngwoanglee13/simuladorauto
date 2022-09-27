@@ -1,0 +1,24 @@
+{
+  "name": "simulador",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start":"parcel index.html",
+    "build": "parcel build index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/youngwoanglee13/simuladorauto.git"
+  },
+  "author": "Young Woang Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/youngwoanglee13/simuladorauto/issues"
+  },
+  "homepage": "https://github.com/youngwoanglee13/simuladorauto#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
