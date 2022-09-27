@@ -1,24 +1,21 @@
 {
-  "name": "simulador",
+  "name": "parcel-jest-base",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "default": "index.html",
   "scripts": {
-    "start":"parcel index.html",
+    "start": "parcel index.html",
     "build": "parcel build index.html",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/youngwoanglee13/simuladorauto.git"
+    "test": "jest --watch",
+    "test-once": "jest --verbose --coverage"
   },
   "author": "Young Woang Lee",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/youngwoanglee13/simuladorauto/issues"
-  },
-  "homepage": "https://github.com/youngwoanglee13/simuladorauto#readme",
   "devDependencies": {
-    "parcel-bundler": "^1.12.5"
+    "@babel/core": "^7.16.7",
+    "@babel/preset-env": "^7.16.8",
+    "babel-jest": "^27.4.6",
+    "jest": "^27.4.7",
+    "parcel": "^2.2.0"
   }
 }

@@ -1,1 +1,13 @@
-alert("Hola desde Javascript");
+
+class Auto{
+
+    ejecutarComando(){
+       
+     
+    }
+
+}
+
+
+
+export default Auto;
