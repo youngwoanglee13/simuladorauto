@@ -32,7 +32,7 @@ class Auto{
             }
         }
         
-       return this.x+","+this.y+this.direcciones[this.direccionActual%4];
+       return this.x+","+this.y+this.direcciones[Math.abs(this.direccionActual%4)];
      
     }
 
