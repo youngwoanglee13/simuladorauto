@@ -8,6 +8,9 @@ describe("Ejecutar comandos", () => {
     it("Avanzar", () => {
       expect(cD.ejecutarComando("A")).toEqual("0,1N");
     });
+    it("Girar Derecha", () => {
+      expect(cD.ejecutarComando("D")).toEqual("0,1E");
+    });
     
 
    
