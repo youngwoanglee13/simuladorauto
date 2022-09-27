@@ -11,6 +11,9 @@ describe("Ejecutar comandos", () => {
     it("Girar Derecha", () => {
       expect(cD.ejecutarComando("D")).toEqual("0,1E");
     });
+    it("Girar Izquierda", () => {
+      expect(cD.ejecutarComando("I")).toEqual("0,1N");
+    });
     
 
    

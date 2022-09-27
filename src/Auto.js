@@ -11,7 +11,10 @@ class Auto{
             this.y=this.y+1;
         }
         if(comando=="D"){
-            this.direccionActual=this.direccionActual+1;
+            this.direccionActual++;
+        }
+        if(comando=="I"){
+            this.direccionActual--;
         }
        return this.x+","+this.y+this.direcciones[this.direccionActual%4];
      
