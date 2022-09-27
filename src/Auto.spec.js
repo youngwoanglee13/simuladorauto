@@ -2,9 +2,9 @@ import ejecutarComando from "./Auto";
 
 const cD = new ejecutarComando();
 describe("Ejecutar comandos", () => {
-    it("Posicion inicial", () => {
+    /*it("Posicion inicial", () => {
       expect(cD.ejecutarComando()).toEqual("0,0N");
-    });
+    });*/
     it("Avanzar", () => {
       expect(cD.ejecutarComando("A")).toEqual("0,1N");
     });
@@ -14,8 +14,8 @@ describe("Ejecutar comandos", () => {
     it("Girar Izquierda", () => {
       expect(cD.ejecutarComando("I")).toEqual("0,1N");
     });
-    
-
-   
+    it("Avanzar mas de una vez", () => {
+      expect(cD.ejecutarComando("AAA")).toEqual("0,4N");
+    });
   });
   
