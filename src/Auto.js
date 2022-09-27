@@ -7,18 +7,20 @@ class Auto{
         this.direcciones = ['N','E','S','O'];
     }
     ejecutarComando(comando){
+        
         for(var i=0;i<comando.length;i++){
+            
             if(comando.charAt(i)=="A"){
-                if(this.direccionActual%4==0){
+                if(this.direccionActual%4==0 && this.y+1<10){
                     this.y++;
                 }
-                if(this.direccionActual%4==2){
+                if(this.direccionActual%4==2 && this.y-1>=0){
                     this.y--;
                 }
-                if(this.direccionActual%4==1){
+                if(this.direccionActual%4==1 && this.x+1<10){
                     this.x++;
                 }
-                if(this.direccionActual%4==3){
+                if(this.direccionActual%4==3 && this.x-1>=0){
                     this.x--;
                 }
             }

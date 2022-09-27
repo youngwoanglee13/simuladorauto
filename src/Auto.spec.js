@@ -18,7 +18,10 @@ describe("Ejecutar comandos", () => {
       expect(cD.ejecutarComando("AAA")).toEqual("0,4N");
     });
     it("Realizar multiples movimientos y giros", () => {
-      expect(cD.ejecutarComando("DDAAAIADADA")).toEqual("0,0O");
+      expect(cD.ejecutarComando("DDAAAIADADAD")).toEqual("0,0N");
+    });
+    it("Realizar movimientos validos sin desbordarse del plano 10x10", () => {
+      expect(cD.ejecutarComando("IADAAAAAAAAAADAAAAAAAAAAADAAAAAAAAAA")).toEqual("9,0S");
     });
   });
   
